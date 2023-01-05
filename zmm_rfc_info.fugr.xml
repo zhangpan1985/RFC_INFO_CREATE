@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>创建采购信息记录</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZMM_RFC_INFOF01</SOBJ_NAME>
+    <SOBJ_NAME>LZMM_RFC_INFOTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZMM_RFC_INFO</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZMM_RFC_INFO_CREATE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>创建采购信息记录及价格</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IT_INPUT</PARAMETER>
+       <TYP>ZMMT_INFO_INPUT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_OUTPUT</PARAMETER>
+       <TYP>ZMMT_INFO_OUTPUT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IT_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>采购信息记录创建RFC输入</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>采购信息记录创建RFC输出</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
